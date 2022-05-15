@@ -71,7 +71,7 @@
     <div class="container-fluid p-0">
       <div class="row g-0">
         <div class="col-lg-4 col-sm-4">
-          <a class="portfolio-box" href="https://carol-blog.herokuapp.com/" title="Blog">
+          <a class="portfolio-box" href="{{ url_for('static', filename='assets/img/portfolio/fullsize/Blog.png') }}" title="Blog">
             <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/thumbnails/1.jpg') }}" alt="..." />
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">Python</div>
@@ -80,7 +80,7 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-4">
-          <a class="portfolio-box" href="https://carolina-todolist.herokuapp.com/" title="ToDo List">
+          <a class="portfolio-box" href="{{ url_for('static', filename='assets/img/portfolio/fullsize/Todolist.png') }}" title="ToDo List">
             <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/thumbnails/2.jpg') }}" alt="..." />
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">Python</div>
@@ -89,17 +89,39 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-4">
-          <a class="portfolio-box" href="https://github.com/CLB20/TinasGiftShop" title="e-Commerce">
+          <a class="portfolio-box" href="{{ url_for('static', filename='assets/img/portfolio/fullsize/e-commerce.png') }}" title="e-commerce">
             <img class="img-fluid" src="{{ url_for('static', filename='assets/img/portfolio/thumbnails/3.jpg') }}" alt="..." />
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">Python</div>
-              <div class="project-name">e-Commerce</div>
+              <div class="project-name">e-commerce</div>
             </div>
           </a>
         </div>
       </div>
     </div>
   </div>
+<section class="page-section">
+    <div class="container px-4 px-lg-5 text-center">
+      <h2 class="mb-4">Take a deeper look at the code of each project or live!</h2>
+      <div class="row g-0">
+        <div class="col-lg-4 col-sm-4">
+          <h2 class="mb-4">Blog</h2>
+          <a class="btn btn-primary btn-xl" href="https://github.com/CLB20/carol-blog" target="_blank">Code</a>
+          <a class="btn btn-primary btn-xl" href="https://carol-blog.herokuapp.com/" target="_blank">Live</a>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+          <h2 class="mb-4">ToDo List</h2>
+          <a class="btn btn-primary btn-xl" href="https://github.com/CLB20/Carolina-ToDoList" target="_blank">Code</a>
+          <a class="btn btn-primary btn-xl" href="https://carolina-todolist.herokuapp.com/" target="_blank">Live</a>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+          <h2 class="mb-4">e-commerce</h2>
+          <a class="btn btn-primary btn-xl" href="https://github.com/CLB20/TinasGiftShop" target="_blank">Code</a>
+          <a class="btn btn-primary btn-xl disabled" href="#" target="_blank">Live</a>
+        </div>
+      </div>
+    </div>
+</section>
   <!-- Call to action-->
   <section class="page-section bg-dark text-white">
     <div class="container px-4 px-lg-5 text-center">
